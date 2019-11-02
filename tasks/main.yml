@@ -1,0 +1,8 @@
+---
+- name: Setup copr repo
+  copy:
+    src: elxreno-multimc.repo
+    dest: /etc/yum.repos.d/copr-elxreno-multimc.repo
+- name:
+  package:
+    name: multimc
